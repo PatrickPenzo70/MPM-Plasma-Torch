@@ -55,6 +55,40 @@ Use spatial data structures for efficient neighbor searching
 The above framework can be expanded with more physics and optimizations depending on the specific requirements of the simulation.
 We can think many particles that can be melt in the hot gas flow.
 
+Implementing the MPM to simulate particles that can melt in a hot gas flow involves addiional complexity compared to the basic MPM implementation.
+The main challenge is to account for phase changes (solid to liquid) and handle the interactions between particles in different phases.
+
+Steps
+# Initialization:
+
+a) Define the domain and discretize it using a background grid.
+b) Initialize particles with properies such as position, velocity, mass, temperature, phase (solid or liquid) etc.
+
+# Grid Construction:
+
+a) Assign particles to the grid cells
+
+# Grid Update:
+
+a) Compute grid forces based on particle data
+b) Update grid velocities and other quantities
+
+# Particle Update:
+
+a) Interpolate grid data back to particles
+b) Update particle positions and properties
+
+# Phase Transition Handling:
+
+a) Implement rules for phase changes (e.g., melting when temperature exceeds a certain threshold).
+
+# Time Integration
+
+a) Use a time-stepping method to advance the simulation
+
+# Boundary Conditions
+
+a) Apply appropriate boundary conditions to both particles and the grid.
 
 
 
