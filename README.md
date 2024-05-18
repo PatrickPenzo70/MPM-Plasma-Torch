@@ -42,6 +42,18 @@ a) Apply appropriate boundary conditions to both particles and the grid.
 
 "applyBoundaryConditions" handles particles that move outside the simualtion domain.
 
+# ENHANCEMENTS
+# Force Calculations
+Implement forces such as pressure, viscosity and thermal effects     
+# Collision Handling
+More sophisticated bounday conditions and particle collisions
+# Thermal Effects
+Integrate temperature change and heat transfer mechanisms
+# Optimizartions
+Use spatial data structures for efficient neighbor searching
+
+The above framework can be expanded with more physics and optimizations depending on the specific requirements of the simulation.
+We can think many particles that can be melt in the hot gas flow.
 
 
 
